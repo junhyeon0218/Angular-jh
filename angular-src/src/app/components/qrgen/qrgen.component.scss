@@ -1,0 +1,23 @@
+.qr-box {
+  margin-top: 3%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.qr-box h2{
+  text-align: center;
+}
+
+.qr-box label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-box ngx-qrcode {
+  margin: 0 auto;
+}

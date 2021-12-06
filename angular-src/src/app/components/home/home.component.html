@@ -1,0 +1,55 @@
+<div class="jh-homelogout" *ngIf="!checkLoggedIn()">
+  <p>환영합니다.</p>
+  <div>
+    <button class="btn btn-lg" type="button" routerLink="/login">
+      로그인
+    </button>
+    &nbsp;
+    <button class="btn btn-lg" type="button" routerLink="/register">
+      사용자등록
+    </button>
+  </div>  
+</div>
+
+<div class="login-home">
+  <div class="p-5 mb-4 bg-info rounded-3 text-center" id="jh-homemain" *ngIf="checkLoggedIn()" >
+    <div class="container-fluid py-5 text-center welcome">
+      <h1 class="display-5 fw-bold" id="titleanimation">김준현의 페이지</h1>
+      <p>환영합니다.</p>
+    </div>
+  </div>  
+  
+  <div class="container" id="jh-homecard" *ngIf="checkLoggedIn()">
+    <div class="row text-center" id="jh-homecardsub">
+      <div class="col jh-infocard">
+        <div class="card jh-infocardsub" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">김준현</h5>
+            <h6 class="card-subtitle mb-2 text-muted">91812189</h6>
+            <p class="card-text">정보보호학과</p>
+            <p class="card-text">총무</p>
+          </div>
+        </div>
+      </div>
+      <div class="col jh-infocard">
+        <div class="card jh-infocardsub" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">팀프로젝트</h5>
+            <h6 class="card-subtitle mb-2 text-muted">온리헬스</h6>
+            <p class="card-text">팀원</p>
+            <p class="card-text">심정보, 전준영, 최병준, 김준현, 김찬욱</p>
+          </div>
+        </div>
+      </div>
+      <div class="col jh-infocard">
+        <div class="card jh-infocardsub" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">개인 홈페이지</h5>
+            <a href="https://junhyeon0218.github.io/main/index.html" target="_blank" class="myhome">첫 번째 페이지</a> <br> <br>
+            <a href="https://0218banana.netlify.app/" target="_blank" class="myhome">두 번째 페이지</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>    
+</div>

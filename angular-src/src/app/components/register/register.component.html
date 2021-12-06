@@ -1,0 +1,33 @@
+<div class="register-box">
+  <h2 class="page-header">사용자 등록</h2>
+  <br>
+  <form (ngSubmit)="onRegisterSubmit()">
+    <div class="form-group">
+      <label for="exampleInputEmail1"> 사용자 이름</label>
+      <input type="text" [(ngModel)]="name" class="form-control" id="exampleInputEmail1" [ngModelOptions]="{standalone: true}"/>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputEmail2">이메일</label>
+      <input type="email" [(ngModel)]="email" class="form-control" id="exampleInputEmail2" [ngModelOptions]="{standalone: true}"/>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputEmail3">아이디</label>
+      <input type="text" [(ngModel)]="username" class="form-control" id="exampleInputEmail3" [ngModelOptions]="{standalone: true}"/>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputEmail4">비밀번호</label>
+      <input type="password" [(ngModel)]="password1" class="form-control" id="exampleInputEmail4" [ngModelOptions]="{standalone: true}"/>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputEmail5">비밀번호 확인</label>
+      <input type="password" [(ngModel)]="password2" class="form-control" id="exampleInputEmail5" [ngModelOptions]="{standalone: true}"/>
+    </div>
+    <br>
+  
+    <input type="submit" class="btn btn-warning" value="사용자 등록" />
+  </form>
+</div>

@@ -1,0 +1,16 @@
+<div *ngIf="name" class="profilecard">
+  <h2 class="page-header"> 이름: {{ name }} </h2>
+  <br>
+  <p>
+    아이디: {{username}}
+    <br>
+    <br>
+    이메일: {{email}}
+  </p>
+
+  <div>
+    <a class="btn btn-primary" routerLink="/profile-edit">내 정보 수정</a>
+  </div>
+
+</div> 
+

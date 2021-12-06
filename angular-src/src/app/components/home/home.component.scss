@@ -1,0 +1,85 @@
+
+
+#jh-homemain{
+  // height: 30vw;
+  background-image: url(../../../assets/desk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-home{
+  margin-top: 5%;
+}
+
+
+// #jh-homecard{
+//   background-color: green;
+//   border: 3px solid blue;
+// }
+
+// #jh-homecardsub{
+//   background-color: yellow;
+//   border: 3px saddlebrown solid;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+#jh-homecard *{
+  color: black;
+}
+
+.jh-infocard{
+  margin: 0 !important;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.jh-infocardsub{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.jh-infocardsub:hover{
+  background-color: whitesmoke;
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.myhome{
+  text-decoration: none;
+  color: black;
+}
+
+.jh-homelogout{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../../assets/desk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 30vw;
+  margin-top: 5%;
+}
+
+.jh-homelogout button {
+  background-color: rgba(0, 0, 0 ,0);
+  color: white;
+  border-radius: 10px;
+}
+
+.jh-homelogout button:hover {
+  background-color: rgba(0, 0, 0 ,0.5);
+  transition: all 0.3s;
+
+}
+
+
+.jh-homelogout p {
+  font-size: 2.5vw;
+}
